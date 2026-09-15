@@ -21,7 +21,7 @@ Visualization Manager:
       Name: TF
       Value: true
   Global Options:
-    Fixed Frame: Base_Body
+    Fixed Frame: base
     Frame Rate: 30
   Name: root
   Tools:
