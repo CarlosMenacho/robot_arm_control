@@ -17,12 +17,12 @@ def generate_launch_description():
     launch method
     """
     urdf_tutorial_path = get_package_share_path('robot_description')
-    default_model_path = urdf_tutorial_path / 'urdf/kr120r2500pro.urdf'
+    default_model_path = urdf_tutorial_path / 'urdf/mecharm_270_pi_adaptive_gripper.urdf'
     default_rviz_config_path = urdf_tutorial_path / 'rviz/urdf.rviz'
 
     gui_arg = DeclareLaunchArgument(
         name='gui',
-        default_value='false',
+        default_value='true',
         choices=['true', 'false'],
         description='Flag to enable joint_state_publisher_gui')
     model_arg = DeclareLaunchArgument(
