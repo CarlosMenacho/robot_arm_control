@@ -23,6 +23,8 @@ setup(
             'sub_joints = visual_pubsub.sub_joints:main',
             'pub_joints = visual_pubsub.pub_joints:main',
             'inv_kinematics = visual_pubsub.inverse_kinematics:main',
+            'workspace = visual_pubsub.workspace_visualizer:main',
+
         ],
     },
 )

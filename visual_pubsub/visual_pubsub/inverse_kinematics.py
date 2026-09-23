@@ -184,6 +184,7 @@ class InverseKinematics(Node):
         # Publish updated joint states
         msg = JointState()
         msg.header.stamp = self.get_clock().now().to_msg()
+        msg.header.frame_id = "base"  # Add this line to fix the empty frame_id error
         msg.name = self.joint_names
         msg.position = self.q.tolist()
         self.joint_pub.publish(msg)
